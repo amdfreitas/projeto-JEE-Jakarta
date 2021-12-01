@@ -21,7 +21,7 @@ public class LojalinesJobs {
 	
 	public LojalinesJobs() {}
 	
-	@Schedule(hour = "*", minute = "*/60",second = "*/10")
+	@Schedule(hour = "*", minute = "*",second = "*")
 	public void enviaEmail() {
 		
 		contest.createProducer().send(queue, "Email");
