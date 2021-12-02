@@ -5,13 +5,14 @@ import javax.ejb.MessageDriven;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
-	
+/*
 @MessageDriven(activationConfig = {
 		@ActivationConfigProperty(propertyName = "destinationLookup",
 				propertyValue = "java:/jms/queue/filavendas"),
 		@ActivationConfigProperty(propertyName = "destinationType",
 		propertyValue = "javax.jms.Queue")
 })
+*/
 public class LojalinesConsumer  implements MessageListener{
 
 	

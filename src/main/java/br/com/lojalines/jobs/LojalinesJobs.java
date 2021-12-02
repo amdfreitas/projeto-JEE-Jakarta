@@ -11,7 +11,7 @@ import javax.jms.Queue;
 
 @Singleton
 public class LojalinesJobs {
-	
+	/*
 	@Inject
 	@JMSConnectionFactory("java:jboss/DefaultJMSConnectionFactory")
 	private  JMSContext contest;
@@ -27,5 +27,9 @@ public class LojalinesJobs {
 		contest.createProducer().send(queue, "Email");
 		
 	}
+	module add --name=com.mysql --resources="/home/amfreitas/workspace/mysql-connector.jar" --dependencies=javax.api,javax.transaction.api
+    jms-queue add --queue-address=filavendas --entries=java:/jms/queue/filavendas
+    /subsystem=datasources/jdbc-driver=mysql:add(driver-name=mysql,driver-module-name=com.mysql,driver-xa-datasource-class-name=com.mysql.cj.jdbc.MysqlXADataSource
 
+*/
 }
